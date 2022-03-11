@@ -176,3 +176,19 @@ footer .glyphicon {
     font-size: 150px;
   }
 }
+.panel-heading {
+  color: #F5F5F5 !important;
+  background-color: #0F1626 !important;
+  padding: 10px;
+  border-bottom: 1px solid transparent;
+}
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+ 
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+.pc { display: none !important; }
+.sp { display: block !important; }
+}
